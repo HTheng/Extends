@@ -1,6 +1,10 @@
+package com.d_5_3_extends;
 /**
  * Created by hengjiang on 16/5/3.
  */
+
+
+
  class Person {
     private String Name;
     private String Sex;
@@ -10,17 +14,17 @@
         this.Name = _Name;
     }
 
+
     public void setSex(String _Sex){
         this.Sex = _Sex;
     }
-
-    public void setAge(int _Age){
-        this.Age = _Age;
+    public String getName(){
+        return Name;
     }
 
 
-    public String getName(){
-        return Name;
+    public void setAge(int _Age){
+        this.Age = _Age;
     }
 
     public String getSex(){
@@ -45,7 +49,7 @@ class Actress extends Person{
 
 }
 
- class Test{
+ class TestPerson{
     public static void main(String arg[]){
         Actress at = new Actress();
         at.setName("Jingtian");
